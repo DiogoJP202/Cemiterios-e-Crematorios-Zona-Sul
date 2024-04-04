@@ -144,16 +144,18 @@ header .links a:hover{
 
 header .links a img{
     width: 80%;
+    animation: pulsando 1s ease-in-out alternate-reverse infinite;
 }
 
 main .whatsapp img{
     position: fixed;
-    top: 91%;
-    left: 85%;
+    top: 90%;
+    left: 89vw;
     width: 60px;
     box-shadow: 2px 2px 7px #000;
     border-radius: 50%;
     animation: pulsando 1s ease-in-out alternate-reverse infinite;
+    z-index: 1;
 }
 
 main #inicial{
@@ -269,7 +271,7 @@ main .carrossel .foto > img{
 
 main .carrossel .foto > h4{
     position: relative;
-    top: -11%;
+    top: -10.6%;
     background-color: #6868687c;
     color: #fff;
     font-size: 1em;
@@ -307,5 +309,130 @@ main #cremacao > h3{
 }
 
 main #cremacao .carrossel .foto > h4{
-    top: -22%;
+    top: -19.2%;
 }
+
+main #informacoes{
+    margin: 30px 0px;
+}
+
+main #informacoes #cemiterios {
+    background: url(../images/cemiterio.jpg) center center no-repeat #fff;
+    box-shadow: 0px 0px 10px #0000006c;
+}
+
+main #informacoes  h2{
+    padding: 20px 10px;
+    text-align: center;
+    font-family: "LTPanneaux-Regular", Arial, Helvetica, sans-serif;
+    color: var(--color1);
+    background-color: #fff;
+    background-color: #ffffff71;
+}
+
+main #informacoes #conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: #ffffff71;
+}
+
+main #informacoes #conteudo img{
+    width: 100%;
+    max-width: 100px;
+
+}
+
+main #informacoes #conteudo ul li{
+    margin: 5px;
+    font-family: "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+}
+
+main #informacoes #contato #linha h2{
+    padding: 30px 30px 0px 30px;
+}
+
+main #informacoes #contato #linha #esfera{
+    position: relative;
+    content: " ";
+    display: block;
+    left: 7%;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color1);
+    border-radius: 50%;
+}
+
+main #informacoes #contato #linha::after{
+    position: relative;
+    content: " ";
+    display: block;
+    top: -15px;
+    left: 8%;
+    width: 100vw;
+    height: 5px;
+    background-color: var(--color1);
+}
+
+main #informacoes #contato #entreEmContato{
+    padding: 20px;
+    text-align: center;
+    font-family: "SourceSansPro_Semibold", Arial, Helvetica, sans-serif;
+}
+
+main #informacoes #contato #entreEmContato a{
+    display: block;
+    margin: auto;
+}
+
+main #informacoes #contato #entreEmContato a img{
+    width: 90%;
+    margin: 10px;
+    box-shadow: 0px 0px 5px #00000078;
+    border-radius: 30px;
+    animation: pulsando 1s ease-in-out alternate-reverse infinite;
+}
+
+main #informacoes #contato #tel{
+    text-align: center;
+    font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
+}
+
+main #informacoes #contato #numeroDeTelefone{
+    font-size: 2.5em;
+}
+
+main #FAQ{
+    background-color: var(--color1);
+}
+
+main #FAQ h2{
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+main #FAQ details{
+    width: 90%;
+}
+
+main #FAQ details:not([open]){
+    color: red;
+}
+main #FAQ details[open]{
+    background-color: #0f0;
+}
+
+main #FAQ summary{
+    background-color: #686868;
+}
+
+main #FAQ summary::marker{
+
+
+}
+

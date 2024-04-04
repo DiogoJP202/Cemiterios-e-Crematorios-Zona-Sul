@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "LTPanneaux_Regular";
+    src: url(../fonts/LTPanneaux/LTPanneaux-Regular.ttf) format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "LTPanneaux_Medium";
+    src: url(../fonts/LTPanneaux/LTPanneaux-Medium.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "LTPanneaux_SemiBold";
+    src: url(../fonts/LTPanneaux/LTPanneaux-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "LTPanneaux_Bold";
+    src: url(../fonts/LTPanneaux/LTPanneaux-Bold.ttf) format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSansPro_Light";
+    src: url(../fonts/SourceSansPro/SourceSansPro-Light.otf) format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SourceSansPro_Regular";
+    src: url(../fonts/SourceSansPro/SourceSansPro-Regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SourceSansPro_Semibold";
+    src: url(../fonts/SourceSansPro/SourceSansPro-Semibold.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SourceSansPro_Bold";
+    src: url(../fonts/SourceSansPro/SourceSansPro-Bold.otf) format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@keyframes pulsando{
+    from{
+        transform: scale(1.1);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color1: #3B8561;
+    --color2: #BFDBF7;
+    --color3: #686868;
+}
+
+header{
+    background-color: var(--color1);
+    font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
+}
+
+header #principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header #principal img{
+    width: 200px;
+}
+
+header #principal nav{
+    display: none;
+}
+
+header #principal .hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+}
+
+header #principal .hamburger .line{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+header .links{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+header .links::before{
+    content: " ";
+    border: 1px solid #ffffff60;
+    width: 95%;
+}
+
+header .links a{
+    padding: 15px;
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+header .links a:first-child{
+    border-bottom: 1px solid #ffffff60;
+}
+
+header .links a:hover{
+    color: var(--color2);
+    font-size: 2.2em;
+    transition-property: font-size;
+    transition-duration: 0.1s;
+}
+
+header .links a img{
+    width: 80%;
+}
+
+main .whatsapp img{
+    position: fixed;
+    top: 91%;
+    left: 85%;
+    width: 60px;
+    box-shadow: 2px 2px 7px #000;
+    border-radius: 50%;
+    animation: pulsando 1s ease-in-out alternate-reverse infinite;
+}
+
+main #inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3B8561;
+    background-image: url(../images/cemiterio.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+main #inicial > img{
+    display: block;
+    width: 100%;
+    max-width: 125px;
+    padding-top: 30px;
+}
+
+main #inicial >p{
+    padding-bottom: 50px;
+    font-size: 2em;
+    font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+main #inicial #sobre{
+    padding: 50px 30px;
+    background-color: #fff;
+    text-align: left;
+}
+
+main #inicial #sobre h1{
+    font-size: 3em;
+    font-family: "LTPanneaux_SemiBold", Arial, Helvetica, sans-serif;
+    color: var(--color1);
+}
+
+main #inicial #sobre p{
+    font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: var(--color3);
+}
+
+main #jazigos{
+    background-color: var(--color1);
+}
+
+main #jazigos h2{
+    padding: 10px;
+    font-size: 3em;
+    font-family: "LTPanneaux_SemiBold", Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+main #jazigos .fundoCinza{
+    padding: 30px;
+    background-color: #B6B6B6;
+    background-image: linear-gradient(#ffffff81, #B6B6B6);
+    font-family: "SourceSansPro_Semibold", Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: var(--color3);
+    box-shadow: 0px  0px 20px #00000085;
+}
+
+main .opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+main .opcoes img{
+    width: 100px;
+}
+
+main .opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+main #jazigos > h3{
+    padding: 20px;
+    font-size: 2em;
+    font-family: "LTPanneaux_SemiBold", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+main .carrossel{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+main .carrossel > .foto{
+    width: 90%;
+    min-width: 350px;
+    margin: 0 10px;
+}
+
+main .carrossel .foto > img{
+    width: 100%;
+}
+
+main .carrossel .foto > h4{
+    position: relative;
+    top: -11%;
+    background-color: #6868687c;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px;
+}
+
+main #cremacao h2{
+    color: var(--color1);
+    font-size: 3em;
+    padding: 10px;
+}
+
+main #cremacao > p{
+    padding: 15px 30px;
+}
+
+main #cremacao p{
+    color: var(--color3);
+    font-family: "SourceSansPro_Semibold", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+main #cremacao .opcoes{
+    padding: 10px 30px;
+    font-family: "SourceSansPro_Semibold", Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: var(--color3);
+}
+
+main #cremacao > h3{
+    padding: 15px;
+    color: var(--color1);
+    font-size: 2em;
+    text-align: center;
+}
+
+main #cremacao .carrossel .foto > h4{
+    top: -22%;
+}

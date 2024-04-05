@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 720px){
+    header .links, header .hamburger{
+        display: none !important;
+    }
+
+    header #principal nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+    }
+
+    main .whatsapp img{
+        left: 95%;
+        top: 90%;
+    }
+
+    .fundoCinza{
+        max-width: 1000px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .opcoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 1900px;
+        margin: auto;
+    }
+
+    .opcoes p{
+        max-width: 300px;
+    }
+
+    .carrossel{
+        justify-content: space-around !important;
+    }
+
+    .foto{
+        width: 30% !important;
+        min-width: unset !important;
+        margin: 0 !important;
+    }
+
+    #jazigos .carrossel{
+        max-width: 1184px;
+        margin: auto;
+    }
+
+    #jazigos .carrossel .foto h4{
+        top: -90% !important;
+    }
+
+    #cremacao .carrossel{
+        max-width: 1030px;
+        margin: auto;
+    }
+
+    #cremacao .carrossel .foto h4{
+        top: -80% !important;
+    }
+
+    #contatos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+    }
+
+    #contatos a{
+        margin: 0 !important;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--color4);
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    footer a {
+        width: 30%;
+    }
+
+    footer a img{
+        width: 100%;
+    }
+
+    footer a, footer p, footer img{
+        width: 30%;
+    }
+}

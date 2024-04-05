@@ -94,10 +94,6 @@ header #principal img{
     width: 200px;
 }
 
-header #principal nav{
-    display: none;
-}
-
 header #principal .hamburger{
     display: flex;
     flex-direction: column;
@@ -114,6 +110,27 @@ header #principal .hamburger .line{
     background-color: #fff;
     border-radius: 10px;
     transition: transform 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+header #principal nav{
+    display: none;
+}
+
+header #principal nav a{
+    font-size: 1.2em;
+    font-family: "LTPanneaux-Regular", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+header #principal nav a:hover{
+    transition: font-size 0.1s ease-in-out;
+    font-size: 1.3em;
+    color: var(--color2);
+}
+
+header #principal nav img{
+    animation: pulsando 1s ease-in-out alternate-reverse infinite;
 }
 
 header .links{
@@ -150,13 +167,14 @@ header .links a:hover{
 
 header .links a img{
     width: 80%;
+    max-width: 300px;
     animation: pulsando 1s ease-in-out alternate-reverse infinite;
 }
 
 main .whatsapp img{
     position: fixed;
     top: 90%;
-    left: 80vw;
+    left: 85%;
     width: 60px;
     filter: drop-shadow(2px 2px 7px #000);
     animation: pulsando 1s ease-in-out alternate-reverse infinite;
@@ -231,7 +249,7 @@ main #jazigos .fundoCinza{
     box-shadow: 0px  0px 20px #00000085;
 }
 
-main .opcoes{
+main .opcao{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -239,11 +257,11 @@ main .opcoes{
     padding: 10px;
 }
 
-main .opcoes img{
+main .opcao img{
     width: 100px;
 }
 
-main .opcoes{
+main .opcao{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -305,7 +323,7 @@ main #cremacao p{
     font-size: 1em;
 }
 
-main #cremacao .opcoes{
+main #cremacao .opcao{
     padding: 10px 30px;
     font-family: "SourceSansPro_Semibold", Arial, Helvetica, sans-serif;
     font-weight: 100;
@@ -399,14 +417,14 @@ main #informacoes #contato #entreEmContato{
 
 main #informacoes #contato #entreEmContato a{
     display: block;
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 main #informacoes #contato #entreEmContato a img{
     width: 100%;
-    margin: 15px;
     filter: drop-shadow(0px 0px 5px #0000003a);
     animation: pulsando 1s ease-in-out alternate-reverse infinite;
 }
@@ -492,7 +510,7 @@ footer{
 
 footer img{
     width: 70%;
-    max-width: 400px;
+    max-width: 250px;
 }
 
 footer a{

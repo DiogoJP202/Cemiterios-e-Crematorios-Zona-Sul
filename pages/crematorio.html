@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cemiterios e Crematorios Zona Sul</title>
+    <link rel="stylesheet" href="../assets/styles/mobile.css" media="all">
+    <link rel="stylesheet" href="../assets/styles/mediaQueries.css">
+    <link rel="shortcut icon" href="../assets/images/logoMarcaArvore.png" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: "LTPanneaux_Regular";
+            src: url(../assets/fonts/LTPanneaux/LTPanneaux-Regular.ttf) format("truetype");
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        main #sobre img{
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            left: -13%;
+            filter: drop-shadow(2px 2px 7px #000);
+        }
+
+        main #inicial #sobre{
+            padding: 10px 50px;
+        }
+
+        main #jazigos h2{
+            text-align: center;
+        }
+
+        main .opcoes{
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+        }
+
+        main .opcao{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+
+        main .opcao .texto h3{
+            text-align: center;
+            color: #3B8561;
+            font-family: "LTPanneaux_Regular", Arial, Helvetica, sans-serif;
+        }
+
+        @media screen and (min-width: 720px){
+            main #sobre{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            main #sobre img{
+                width: 100%;
+                max-width: 400px;
+                position: relative;
+                left: 0;
+            }
+
+            main #sobre .textos p{
+                max-width: 400px;
+            }
+
+            .fundoCinza{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                width: 100%;
+                max-width: unset;
+                border-radius: 0;
+            }
+
+            .opcoes{
+                margin: 0;
+            }
+
+            main .carrossel .foto > img{
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="principal">
+            <img src="../assets/images/logoMarcaBranca.png" alt="Logo do Cemitério e Crematórios Zona Sul">
+            <nav>
+                <a href="../index.html">INICIAL</a>
+                <a href="./jazigo.html">JAZIGOS</a>
+                <a href="https://chat.whatsapp.com/Lw068o0VpAqBpY2Hdh8yTk" target="_blank">
+                    <img src="../assets/images/botaoSemZap.png" alt="Botão do Whatsapp">
+                </a>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="links">
+            <a href="../index.html">INICIAL</a>
+            <a href="./jazigo.html">JAZIGOS</a>
+            <!--https://api.whatsapp.com/send?phone=5511990213982&text=Cemitério e Crematórios Zona Sul-->
+            <a href="https://chat.whatsapp.com/Lw068o0VpAqBpY2Hdh8yTk" target="_blank">
+                <img src="../assets/images/botaoZap.png" alt="Botão do Whatsapp">
+            </a>
+        </div>
+    </header>
+    <main>
+        <a href="https://chat.whatsapp.com/Lw068o0VpAqBpY2Hdh8yTk" target="_blank" class="whatsapp"><img src="../assets/images/whatsappIcone.png" alt="Botão do whatsapp"></a>
+        <section id="inicial">
+            <div id="sobre">
+                <img src="../assets/images/imagemInicialCrematório.png" alt="Imagens de urna com cinzas.">
+                <div class="textos">
+                    <h1>Cremação</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit amet labore accusamus alias ipsum a pariatur ea ducimus minus eum sunt suscipit expedita nisi, consectetur, veritatis magnam dicta repellat!</p>
+                </div>
+            </div>
+        </section>
+        <section id="jazigos">
+            <h2>Homenagens</h2>
+            <div class="fundoCinza">
+                <div class="opcoes">
+                    <div class="opcao">
+                        <img src="../assets/images/jazigoImagemIlustrativa.png" alt="Imagem ilustrativa de um jazigo">
+                        <div class="texto">
+                            <h3>Opções de Urna</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iusto odit ea hic nulla blanditiis exercitationem temporibus fugit nihil enim unde, aliquam consequuntur, quia beatae nisi quis rem, cum repudiandae?</p>
+                        </div>
+                    </div>
+                    <div class="opcao">
+                        <img src="../assets/images/jazigoImagemIlustrativa.png" alt="Imagem ilustrativa de um jazigo">
+                        <div class="texto">
+                            <h3>Crematório</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iusto odit ea hic nulla blanditiis exercitationem temporibus fugit nihil enim unde, aliquam consequuntur, quia beatae nisi quis rem, cum repudiandae?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcoes">
+                    <div class="opcao">
+                        <img src="../assets/images/jazigoImagemIlustrativa.png" alt="Imagem ilustrativa de um jazigo">
+                        <div class="texto">
+                            <h3>Tempo de cerimônia</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iusto odit ea hic nulla blanditiis exercitationem temporibus fugit nihil enim unde, aliquam consequuntur, quia beatae nisi quis rem, cum repudiandae?</p>
+                        </div>
+                    </div>
+                    <div class="opcao">
+                        <img src="../assets/images/jazigoImagemIlustrativa.png" alt="Imagem ilustrativa de um jazigo">
+                        <div class="texto">
+                            <h3>Conte Conosco</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iusto odit ea hic nulla blanditiis exercitationem temporibus fugit nihil enim unde, aliquam consequuntur, quia beatae nisi quis rem, cum repudiandae?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Conheça nossos serviços</h3>
+            <div class="carrossel">
+                <div class="foto">
+                    <img src="../assets/images/carrossel_jazigo_1.jpg" alt="cemiterio">
+                </div>
+                <div class="foto">
+                    <img src="../assets/images/carrossel_jazigo_2.jpg" alt="cemiterio">
+                </div>
+                <div class="foto">
+                    <img src="../assets/images/carrossel_jazigo_3.jpg" alt="cemiterio">
+                </div> 
+            </div>
+        </section>
+        <section id="informacoes">
+            <div id="contato">
+                <div id="linha">
+                    <h2>Neste momento delicado te ajudaremos com tudo</h2>
+                    <div id="esfera"></div>
+                </div>
+                <div id="entreEmContato">
+                    <p>Seja atendido imediatamente!</p>
+                    <div id="contatos">
+                        <a href="https://chat.whatsapp.com/Lw068o0VpAqBpY2Hdh8yTk" target="_blank">
+                            <img src="../assets/images/botaoSemZap.png" alt="Botão do Whatsapp">
+                        </a>
+                        <div id="tel">
+                            <p>Atendimento 24 Horas no telefone fixo:</p>
+                            <h3 id="numeroDeTelefone">2999-9999</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="FAQ">
+            <h2>Perguntas Frequentes</h2>
+            <details>
+                <summary>
+                    Como posso adquirir um jazigo ou crematório ?
+                </summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, deserunt exercitationem, ad aspernatur ullam officia incidunt quidem voluptatem repellendus quas possimus iste quos sint iusto eius minus rerum delectus facilis.</p>
+            </details>
+            <details>
+                <summary>
+                    Quais são os procedimentos para cremação ?
+                </summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, deserunt exercitationem, ad aspernatur ullam officia incidunt quidem voluptatem repellendus quas possimus iste quos sint iusto eius minus rerum delectus facilis.</p>
+            </details>
+            <details>
+                <summary>
+                    Como são mantidos os jazigos e o cemitério ?
+                </summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, deserunt exercitationem, ad aspernatur ullam officia incidunt quidem voluptatem repellendus quas possimus iste quos sint iusto eius minus rerum delectus facilis.</p>
+            </details>
+        </section>
+    </main>
+    <footer>
+        <img src="../assets/images/logoMarca.png" alt="Logo do Cemitério e Crematórios Zona Sul">
+        <a href="https://chat.whatsapp.com/Lw068o0VpAqBpY2Hdh8yTk" target="_blank">
+            <img src="../assets/images/botaoZap.png" alt="Botão do Whatsapp">
+        </a>
+        <p>&copy; Todos os direitos reservados a <strong>Cemitérios e Crematórios Zona Sul</strong>.</p>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>

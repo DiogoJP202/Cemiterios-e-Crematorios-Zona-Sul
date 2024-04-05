@@ -60,6 +60,11 @@
     }
 }
 
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px;}
+    100%  {opacity: 1; margin-left: 0px;}
+  }
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -70,6 +75,7 @@
     --color1: #3B8561;
     --color2: #BFDBF7;
     --color3: #686868;
+    --color4: #BFF7C5;
 }
 
 header{
@@ -150,10 +156,9 @@ header .links a img{
 main .whatsapp img{
     position: fixed;
     top: 90%;
-    left: 89vw;
+    left: 80vw;
     width: 60px;
-    box-shadow: 2px 2px 7px #000;
-    border-radius: 50%;
+    filter: drop-shadow(2px 2px 7px #000);
     animation: pulsando 1s ease-in-out alternate-reverse infinite;
     z-index: 1;
 }
@@ -165,6 +170,7 @@ main #inicial{
     align-items: center;
     background-color: #3B8561;
     background-image: url(../images/cemiterio.jpg);
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -186,6 +192,7 @@ main #inicial >p{
 }
 
 main #inicial #sobre{
+    width: 100%;
     padding: 50px 30px;
     background-color: #fff;
     text-align: left;
@@ -271,7 +278,7 @@ main .carrossel .foto > img{
 
 main .carrossel .foto > h4{
     position: relative;
-    top: -10.6%;
+    top: -10.9%;
     background-color: #6868687c;
     color: #fff;
     font-size: 1em;
@@ -281,6 +288,7 @@ main .carrossel .foto > h4{
 main #cremacao h2{
     color: var(--color1);
     font-size: 3em;
+    font-family: "LTPanneaux-SemiBold", Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 
@@ -318,6 +326,7 @@ main #informacoes{
 
 main #informacoes #cemiterios {
     background: url(../images/cemiterio.jpg) center center no-repeat #fff;
+    background-size: cover;
     box-shadow: 0px 0px 10px #0000006c;
 }
 
@@ -327,7 +336,7 @@ main #informacoes  h2{
     font-family: "LTPanneaux-Regular", Arial, Helvetica, sans-serif;
     color: var(--color1);
     background-color: #fff;
-    background-color: #ffffff71;
+    background-color: #ffffffc2;
 }
 
 main #informacoes #conteudo{
@@ -335,7 +344,7 @@ main #informacoes #conteudo{
     align-items: center;
     justify-content: space-around;
     position: relative;
-    background-color: #ffffff71;
+    background-color: #ffffffc2;
 }
 
 main #informacoes #conteudo img{
@@ -346,18 +355,22 @@ main #informacoes #conteudo img{
 
 main #informacoes #conteudo ul li{
     margin: 5px;
-    font-family: "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+    font-family: "SourceSansPro_bold", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
 main #informacoes #contato #linha h2{
     padding: 30px 30px 0px 30px;
 }
 
+main #informacoes #contato #linha{
+    overflow: hidden;
+}
+
 main #informacoes #contato #linha #esfera{
     position: relative;
-    content: " ";
     display: block;
-    left: 7%;
+    left: 7%;    
     width: 25px;
     height: 25px;
     background-color: var(--color1);
@@ -383,14 +396,15 @@ main #informacoes #contato #entreEmContato{
 
 main #informacoes #contato #entreEmContato a{
     display: block;
+    width: 90%;
+    max-width: 400px;
     margin: auto;
 }
 
 main #informacoes #contato #entreEmContato a img{
-    width: 90%;
-    margin: 10px;
-    box-shadow: 0px 0px 5px #00000078;
-    border-radius: 30px;
+    width: 100%;
+    margin: 15px;
+    filter: drop-shadow(0px 0px 5px #0000003a);
     animation: pulsando 1s ease-in-out alternate-reverse infinite;
 }
 
@@ -405,6 +419,7 @@ main #informacoes #contato #numeroDeTelefone{
 
 main #FAQ{
     background-color: var(--color1);
+    padding-bottom: 20px;
 }
 
 main #FAQ h2{
@@ -416,23 +431,73 @@ main #FAQ h2{
     color: #fff;
 }
 
-main #FAQ details{
-    width: 90%;
-}
-
-main #FAQ details:not([open]){
-    color: red;
-}
-main #FAQ details[open]{
-    background-color: #0f0;
-}
-
 main #FAQ summary{
-    background-color: #686868;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 1em;
+    font-family: "SourceSansPro_Bold", Arial, Helvetica, sans-serif;
+    color: var(--color1);
+    border-radius: 10px 10px 0 0;
 }
 
-main #FAQ summary::marker{
-
-
+main #FAQ summary::after{
+    content: "+";
+    float: right;
+    font-size: 1.9em;
 }
 
+main #FAQ details{
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin: 15px auto;
+    background-color: var(--color4);
+    border-radius: 11px;
+}
+
+main #FAQ details > p{
+    padding: 10px;
+    font-family: "SourceSansPro_Bold", Arial, Helvetica, sans-serif;
+}
+
+main #FAQ details::marker{
+    display: none ;
+}
+
+main #FAQ details[open] summary::after{
+    transition: all 1s ease-in-out;
+    font-size: 1.9em;
+    content: "-";
+    float: right;
+}
+
+main #FAQ details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color4);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+footer img{
+    width: 70%;
+    max-width: 400px;
+}
+
+footer a{
+    width: 80%;
+    animation: pulsando 1s ease-in-out alternate-reverse infinite;
+}
+
+footer p{
+    font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
+    padding: 10px;
+}

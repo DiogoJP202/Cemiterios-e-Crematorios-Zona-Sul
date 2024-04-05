@@ -32,3 +32,5 @@ document.addEventListener("click", event => {
         };
     };
 });
+
+// Código feito por Diogo Antonny https://github.com/DiogoJP202

@@ -264,6 +264,9 @@ main .carrossel{
     justify-content: flex-start;
     overflow-x: scroll;
     width: 100%;
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
 }
 
 main .carrossel > .foto{

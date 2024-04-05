@@ -12,6 +12,16 @@
         width: 80%;
     }
 
+    #sobre h1{
+        max-width: 80%;
+        margin: auto;    
+    }
+
+    #sobre > p{
+        max-width: 80%;
+        margin: auto;    
+    }
+
     main .whatsapp img{
         left: 90%;
         top: 90%;
@@ -45,6 +55,11 @@
         margin: 0 !important;
     }
 
+    #jazigos h2{
+        max-width: 80%;
+        margin: auto;    
+    }
+
     #jazigos .carrossel{
         max-width: 1184px;
         margin: auto;
@@ -52,6 +67,16 @@
 
     #jazigos .carrossel .foto h4{
         top: -90% !important;
+    }
+
+    #cremacao h2{
+        max-width: 80%;
+        margin: auto;    
+    }
+
+    #cremacao > p{
+        max-width: 80%;
+        margin: auto;    
     }
 
     #cremacao .carrossel{

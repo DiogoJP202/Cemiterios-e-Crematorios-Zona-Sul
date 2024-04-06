@@ -230,7 +230,7 @@ main #inicial #sobre p{
 
 main #jazigos{
     background-color: var(--color1);
-    background-image: linear-gradient(180deg, #3b8561, #a5ccb7);
+    background-image: linear-gradient(180deg, #3b8561, #1e4432);
 }
 
 main #jazigos h2{
@@ -441,7 +441,7 @@ main #informacoes #contato #numeroDeTelefone{
 
 main #FAQ{
     background-color: var(--color1);
-    background-image: linear-gradient(180deg, #3b8561, #a5ccb7);
+    background-image: linear-gradient(180deg, #3b8561, #1e4432);
     padding-bottom: 20px;
 }
 

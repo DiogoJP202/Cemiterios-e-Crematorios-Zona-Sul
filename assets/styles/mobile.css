@@ -524,7 +524,6 @@ footer{
     background-color: var(--color4);
     font-size: 1.5em;
     text-align: center;
-    z-index: 2;
 }
 
 footer .logos{
@@ -550,6 +549,7 @@ footer p{
     font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
     font-size: 0.7em;
     padding: 10px;
+    z-index: 2;
 }
 
 footer p a{

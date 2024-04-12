@@ -223,7 +223,7 @@ main #inicial #sobre h1{
 }
 
 main #inicial #sobre p{
-    font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
+    font-family: "SourceSansPro_bold", Arial, Helvetica, sans-serif;
     font-weight: 100;
     color: var(--color3);
 }
@@ -234,10 +234,19 @@ main #jazigos{
 }
 
 main #jazigos h2{
-    padding: 10px;
-    font-size: 3em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 2em;
     font-family: "LTPanneaux_SemiBold", Arial, Helvetica, sans-serif;
     color: #fff;
+}
+
+main #jazigos h2 span{
+    font-size: 0.6em;
+    font-family: "LTPanneaux_Regular", Arial, Helvetica, sans-serif;
 }
 
 main #jazigos .fundoCinza{
@@ -250,24 +259,21 @@ main #jazigos .fundoCinza{
     box-shadow: 0px  0px 20px #00000085;
 }
 
+.ctaLink{
+    font-family: "LTPanneaux_SemiBold", Arial, Helvetica, sans-serif;  
+    color: blueviolet;
+}
+
 main .opcao{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
     padding: 10px;
 }
 
 main .opcao img{
     width: 100px;
-}
-
-main .opcao{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 10px;
 }
 
 main #jazigos > h3{
@@ -308,10 +314,19 @@ main .carrossel .foto > h4{
 }
 
 main #cremacao h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
     color: var(--color1);
-    font-size: 3em;
+    font-size: 2em;
     font-family: "LTPanneaux-SemiBold", Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding: 20px;
+}
+
+main #cremacao h2 span{
+    font-size: 0.6em;
+    font-family: "LTPanneaux_Regular", Arial, Helvetica, sans-serif;
 }
 
 main #cremacao > p{
@@ -512,19 +527,40 @@ footer{
     z-index: 2;
 }
 
-footer img{
-    width: 70%;
-    max-width: 250px;
+footer .logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-footer a{
-    width: 80%;
+footer .logos img{
+    width: 30%;
+}
+
+footer > a{
+    width: 50%;
     animation: pulsando 1s ease-in-out alternate-reverse infinite;
+}
+
+footer > a img{
+    width: 100%;
 }
 
 footer p{
     font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
     padding: 10px;
+}
+
+footer p a{
+    font-family: "SourceSansPro_Bold", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #000;
+    text-decoration: none;
+}
+
+footer p a:hover{
+    color: #3B8561;
 }
 
 /* Código feito por Diogo Antonny https://github.com/DiogoJP202 */

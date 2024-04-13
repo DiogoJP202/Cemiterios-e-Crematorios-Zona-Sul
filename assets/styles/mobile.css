@@ -192,6 +192,7 @@ main #inicial .backgroundInicio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     background-color: #3B8561;
     background-image: url(../images/cemiterio.webp);
     background-size: cover;
@@ -308,6 +309,7 @@ main .carrossel > .foto{
 
 main .carrossel .foto > img{
     width: 100%;
+    height: 90%;
 }
 
 main .carrossel .foto > h4{
@@ -360,7 +362,7 @@ main #cremacao > h3{
 }
 
 main #cremacao .carrossel .foto > h4{
-    top: -19.2%;
+    top: -14.5%;
 }
 
 main #informacoes{

@@ -233,6 +233,8 @@ main #inicial #sobre p{
     font-family: "SourceSansPro_bold", Arial, Helvetica, sans-serif;
     font-weight: 100;
     color: var(--color3);
+    text-indent: 10px;
+    margin: 10px 0px;
 }
 
 main #jazigos{
@@ -394,7 +396,7 @@ main #informacoes #conteudo{
 
 main #informacoes #conteudo img{
     width: 100%;
-    max-width: 100px;
+    max-width: 200px;
 
 }
 
@@ -532,43 +534,70 @@ footer{
     background-color: var(--color4);
     font-size: 1.5em;
     text-align: center;
-}
-
-footer .logos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer .logos img{
-    width: 30%;
-}
-
-footer > a{
-    width: 50%;
-    animation: pulsando 1s ease-in-out alternate-reverse infinite;
-}
-
-footer > a img{
-    width: 100%;
-}
-
-footer p{
-    font-family: "SourceSansPro_Regular", Arial, Helvetica, sans-serif;
-    font-size: 0.7em;
-    padding: 10px;
     z-index: 2;
 }
 
-footer p a{
-    font-family: "SourceSansPro_Bold", Arial, Helvetica, sans-serif;
-    font-size: 1em;
+
+footer .inicioFotter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .inicioFotter > img{
+    width: 70%;
+    max-width: 400px;
+    padding: 15px;
+}
+
+footer .inicioFotter > a{
+    width: 50%;
+    max-width: 300px;
+    animation: pulsando 1s ease-in-out alternate-reverse infinite;
+}
+
+footer .inicioFotter > a > img{
+    width: 100%;
+}
+
+footer #contatosL{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 500px;
+}
+
+footer #contatosL > img{
+    width: 30%;
+}
+
+footer .texto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    padding-bottom: 5px;
+    font-family: "SourceSansPro_Semibold", Arial, Helvetica, sans-serif;
+    font-size: 0.65em;
     color: #000;
     text-decoration: none;
 }
 
-footer p a:hover{
+footer .texto a{
+    color: #000;
+}
+
+footer .texto a:hover{
     color: #3B8561;
+}
+
+footer p{
+    width: 90%;
+    margin: 20px;
+    padding-top: 20px;
+    font-size: 0.8em;
+    border-top: 2px solid #000;
 }
 
 /* Código feito por Diogo Antonny https://github.com/DiogoJP202 */

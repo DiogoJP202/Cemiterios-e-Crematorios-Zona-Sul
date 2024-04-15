@@ -18,6 +18,7 @@
 
 - Responsividade para telas menores;
 - Responsividade Dinâmica;
+- Boas práticas de SEO;
 - Animações css e javascript;
 
 Informações Adicionais ℹ:

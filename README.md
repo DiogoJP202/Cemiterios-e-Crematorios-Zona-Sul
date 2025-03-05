@@ -1,5 +1,6 @@
 # Cemiterios-e-Crematorios-Zona-Sul
-> Freela de um site sobre jazigos e crematórios
+> Freelancer de um site sobre jazigos e crematórios.
+> Ficou em primeiro lugar de pesquisas em cemitérios ou crematórios da zona sul.
 
 ![image](https://github.com/DiogoJP202/Cemiterios-e-Crematorios-Zona-Sul/assets/102389309/dc7b08a1-0af0-4607-a510-53f2379cfbff)
 
